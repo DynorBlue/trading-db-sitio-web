@@ -47,3 +47,56 @@ nav:hover {
 nav:hover ul li a {
   color: #00a36c;
 }
+/* por parte de article necesitos la info correcta, las imagenes,
+probablemente usare un div para mayor estetica*/
+article {
+  background-color: #003366;
+  color: white;
+  min-height: 500px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column; /* Apilamos las secciones verticalmente */
+  align-items: center; /* Centramos las secciones horizontalmente */
+  gap: 30px;
+}
+article section {
+  background-color: #ffffff;
+  width: 80%;
+  max-width: 1300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  /*height: 2000px; por ahora no lo usaremos esperare a llenar los section de info e imagenes*/
+  height: 200px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+article section a {
+  text-decoration: none;
+}
+article section a h2 {
+  font-size: 2rem;
+  color: #000000;
+  text-align: center;
+}
+
+footer {
+  background-color: #00a36c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 0px;
+  height: 150px;
+}
+/* por parte del footer nos falta lo siguiente:
+agregar una etiqueta i para usarla con id y modificar el tamaño de los iconos, 
+referenciar claramente las redes sociales a nuestros perfiles en ellas,
+efecto de agrandamiento en los iconos*/
+footer a {
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #000000;
+}
